@@ -26,8 +26,7 @@ Question 2.
   Content Based:  
   -Pros:   It can handle better when we have a few interaction for a user or an item, i.e. with sparse interaction matrix.    
   -Cons:   Domain knowledge is required and features need to be entered manually, which may take a lot of effort.   
-  
- Neural Network:  
+  Neural Network:  
   -Pros: we can have advantage of both Collaborative and Content based approaches, and it tends to have a better results.   
   -Cons: it is more complex and relatively slow both in train and prediction.
    
