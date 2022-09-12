@@ -12,5 +12,5 @@ Output : clu hlt io
 ---------
 ```
 
-Section 2.
+Section 2.  
 1.
