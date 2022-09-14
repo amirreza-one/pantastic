@@ -51,3 +51,14 @@ Although a better and more sophisticated model for this use case is Neural Netwo
    
 **How would you solve the cold start problem? (i.e., how would you update the algorithm so it not only can make recommendations to the existing users in the recommender, but also to new users that have no prior activities)**
    - To solve Cold Start problem there are several things we can do:  For new user who hasnt much interaction yet we can show him a combination of most popular items and some random items to collect data from his interactions. For a new item, we can randomly show it to a group of users to collect data, also a better way could be to use a content-based recommendation system to show this item to users who liked similar items.
+
+
+---
+**How can we train a model which incorporates both the ratings and the Shoppers and Products attributes (age, gender, location for shoppers, type, size, color for products)? Describe your technique.**
+
+There are two approaches that we can take.
+1. we can feed both interaction and features in a neural network to predict the probability of having interaction.
+2. we can design a hierarchical model in a way that for those items which doesnt have enough interaction, based on features similarities we recommend it to users who had interaction with similar items. Also for new user who doesnt have interaction, based on feature similarities of buyers we provide those items that similar users like.
+otherwise if the item or the user has enough interaction we use the collaborative filtering approach which recommends just based on interactions.
+
+---
