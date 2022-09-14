@@ -60,5 +60,3 @@ There are two approaches that we can take.
 1. we can feed both interaction and features in a neural network to predict the probability of having interaction.
 2. we can design a hierarchical model in a way that for those items which doesnt have enough interaction, based on features similarities we recommend it to users who had interaction with similar items. Also for new user who doesnt have interaction, based on feature similarities of buyers we provide those items that similar users like.
 otherwise if the item or the user has enough interaction we use the collaborative filtering approach which recommends just based on interactions.
-
----
