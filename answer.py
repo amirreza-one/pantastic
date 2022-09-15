@@ -1,6 +1,7 @@
 import math
 
 def encode_message(raw_input):
+  raw_input = raw_input.replace(' ','')
   L = len(raw_input) 
   col = math.ceil(math.sqrt(L))
   row = math.ceil(L/col)
